@@ -1,6 +1,6 @@
 # Court Hearing Time Calculator
 
-## 📌 Problem Statement
+## Problem Statement
 You are at court for a traffic ticket and there are 4 other people with you.  
 Everyone’s hearing will be in **alphabetical order**.  
 Each hearing takes **30 minutes**.  
@@ -10,7 +10,7 @@ The task: **Calculate how long it will take for your hearing to finish.**
 
 ---
 
-## 🚀 Examples
+## Examples
 
 ```js
 court("Jules", 3, "Adam Betty Frank Mike"); 
@@ -22,7 +22,7 @@ court("Zane", 1, "Mark Hank Ana Vivian");
 
 ---
 
-## 🧾 Previous Code (Naive Approach)
+## Previous Code (Naive Approach)
 
 ```js
 function court(name, judges, people) {
@@ -41,7 +41,7 @@ function court(name, judges, people) {
 
 ---
 
-## ⚡ Optimized Code (Final Version)
+## Optimized Code (Final Version)
 
 ```js
 function court(name, judges, people) {
@@ -63,7 +63,7 @@ function court(name, judges, people) {
 
 ---
 
-## 🧠 Optimization Journey
+## Optimization Journey
 
 1. **Initial solution**  
    - Split the names, added my own, sorted the list, then found my position with `indexOf()`.  
@@ -81,7 +81,7 @@ function court(name, judges, people) {
 
 ---
 
-## 🧪 Benchmark Example
+## Benchmark Example
 
 ```js
 console.time("optimized");
@@ -96,5 +96,4 @@ Output shows that the **optimized version runs faster** because it avoids sortin
 ---
 
 ## ✅ Conclusion
-The optimized solution eliminates unnecessary sorting and directly counts how many names are alphabetically before yours.  
-This reduces complexity from **O(n log n)** to **O(n)**, making it the fastest and most efficient solution.
+The optimized solution eliminates unnecessary sorting and directly counts how many names are alphabetically before yours. This reduces complexity from **O(n log n)** to **O(n)**, making it the fastest and most efficient solution.
